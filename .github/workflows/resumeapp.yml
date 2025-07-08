@@ -1,4 +1,4 @@
-name: Deploy My Resume WebApp to EC2
+name: Deploy Resume WebApp to EC2
 
 on:
   push:
@@ -40,5 +40,4 @@ jobs:
             sudo rm -rf /var/www/html/*
             # Move new files to /var/www/html
             sudo mv * /var/www/html
-            #############
           
