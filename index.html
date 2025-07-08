@@ -1,272 +1,168 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donatus Dee Profile</title> <!-- apearing on web browser title bar -->
-  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alexander Amoah-Sakyi - CV</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Open Sans', sans-serif;
+      background-color: #0a1f44; /* Navy blue */
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
 
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      color: #333;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #003366;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin: 5px 0;
+      color: #003366;
+      font-size: 28px;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #555;
+    }
+
+    .contact {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .contact a {
+      color: #003366;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section h2 {
+      color: #003366;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .two-column {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 30px;
+      color: #ccc;
+    }
+
+    @media print {
+      body {
+        background-color: white;
+      }
+      .container {
+        box-shadow: none;
+      }
+    }
+  </style>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<html>
-  <head>
-    <title>My Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Alexander <Amoah-Sakyi></Amoah-Sakyi></a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#"><i class="fa fa-home fa-2x fa-fw"></i>Home</a></li>
-            <li><a href="https://github.com/alexsakyi1"><i class="fa fa-github fa-2x fa-fw"></i>Github</a></li>
-            <li><a href="www.linkedin.com/in/alexander-amoah-sakyi-b78886106/"><i class="fa fa-linkedin-square fa-2x fa-fw"></i>Linked In</a></li>
-            <li><a href="#contact" data-toggle="modal"><i class="fa fa-envelope fa-2x fa-fw"></i>Contact</a></li>
-            </li>
-          </ul>
-        </div>
+
+  <div class="container">
+    <div class="header">
+      <img src="images/ChatGPT Image Jul 8, 2025, 05_39_04 PM.png" alt="Profile Picture" class="profile-pic">
+      <h1>Alexander Amoah-Sakyi</h1>
+      <h3>Systems Engineer | DevOps Engineer | SysAdmin</h3>
+      <div class="contact">
+        <p>Accra, Ghana</p>
+        <a href="mailto:alexsakyi@gmail.com">alexsakyi@gmail.com</a> |
+        <a href="https://github.com/alexsakyi1" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/alexander-amoah-sakyi-b78886106/" target="_blank">LinkedIn</a>
       </div>
-    </nav>
-    <!-- End Navbar -->
-
-    <!-- Intro -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5 name-intro">
-          <h2 class="main-name">Alexander Amoah-Sakyi</h1>
-          <h3 class="position">Systems Engineer/ DevOps Engineer/ Systems Administrator</h2>
-          <p class="resume">Prague, Czech Republic</p>
-          <a class ="resume" href="mailto:alexsakyi@gmail.com">alexsakyi@gmail.com</a>
-        </div>
-        <div class="col-sm-4 col-sm-offset-2">
-          <img id="main-pic" src="./images/pic.jpg">
-        </div>
-      </div>
-      <hr id="strong-line">
-      <!-- End Intro -->
-
-      <!-- Objective -->
-      <div class="row">
-        <div class="col-sm-12">
-          <h3 class="title">Professional Summary</h3>
-          <hr> 
-          <p class="resume">I am a versatile, tech-savvy, and proactive Systems Administrator with 5+ years of experience in IT systems engineering, focusing on infrastructure management such as server deployment, network configuration, and system monitoring. I am detail-oriented, passionate about learning and, thrive in fast-paced, dynamic teams where I can contribute and align my skills with the company's goals to ensure operational success and drive innovative solutions.</p>
-        </div>
-      </div>
-      <br /> 
-      <!-- End Objective -->
-
-      <!-- Summary of Qualifications -->
-      <div class="row">
-        <div class="col-sm-12">
-          <h3 class="title">Summary of Achievements</h3>
-          <p class="about"></p>Results-driven DevOps Engineer with strong expertise in automating infrastructure, streamlining CI/CD pipelines, and optimizing cloud deployments using tools like Docker, Kubernetes and Terraform. Skilled in AWS, Linux systems, and scripting (Python, Bash), I specialize in improving system reliability, scalability, and deployment speed. My objective is to leverage my technical proficiency and problem-solving mindset to help organizations build resilient DevOps practices, drive innovation, and accelerate delivery cycles in a fast-paced, collaborative environment.
-
-.</p>
-          <hr> 
-          <ul class="resume">
-            <li><strong><span class="achievements">5+ years</span></strong> of experience in the IT field</li>
-            <li><strong><span class="achievements">Enhanced System Reliability:</span></strong> Installed, configured, and maintained Linux servers for high availability, achieving a 99.9% uptime through proactive monitoring and optimization.</li>
-            <li><strong><span class="achievements">Streamlined User Management:</span></strong> Administered user accounts, groups, and file permissions across multiple platforms, improving access control and security compliance.</li>
-            <li><strong><span class="achievements">Optimized Monitoring Systems:</span></strong> Implemented and managed monitoring solutions using Nagios, Zabbix, CheckMK, and Grafana, leading to a 30% reduction in response time for system performance issues.</li>
-            <li><strong><span class="achievements">Automated Task Management:</span></strong> Wrote and maintained shell scripts to automate repetitive tasks, reducing manual workload by 40% and enhancing operational efficiency.</li>
-            <li><strong><span class="achievements">Disaster Recovery Implementation:</span></span></strong> Developed comprehensive backup and disaster recovery plans using cron jobs, ensuring data integrity and quick recovery in critical situations.</li>
-            <li><strong><span class="achievements">Managed Cloud Infrastructure:</span></strong> Administered AWS and Azure cloud environments, optimizing resource allocation and reducing costs by 20% through efficient usage monitoring.</li>
-            <li><strong><span class="achievements">Coordinated IT Projects:</span></strong> Successfully led IT project coordination through Monday.com, ensuring timely completion and adherence to project timelines, which improved overall team productivity.</li>
-            <li><strong><span class="achievements">Proficient in Virtualization:</span></strong> Managed VMware virtual environments and supported the integration of cloud technologies, enhancing scalability and performance for the organization's IT infrastructure.</li>
-            <li><strong><span class="achievements">Implemented CI/CD Pipelines:</span></strong> Developed and maintained CI/CD pipelines that automated the build, test, and deployment processes, reducing deployment time by 50% and increasing the frequency of releases, ultimately improving overall software delivery efficiency.</li>
-          </ul>
-          <p></p>
-        </div>
-      </div>
-      <br /> 
-      <!-- End Summary of Qualifications -->
-
-      <!-- Technical Skills -->
-      <div class="row">
-        <div class="col-sm-12">
-          <h3 class="title">Technical Skills</h3>
-          <hr> 
-          <div class="col-sm-3">
-            <p class="subtitle">Languages</p>
-            <ul class="resume">
-              <li>HTML</li>
-              <li>Python</li>
-              <li>Bash</li>
-              <li>Git</li>
-              <li>YAML</li>
-            </ul>
-            <p class="subtitle">Container Orchestration</p>
-            <ul class="resume">
-              <li>Docker</li>
-              <li>Kubernetes</li>
-            </ul>
-          </div>
-          <div class="col-sm-3">
-            <p class="subtitle">Cloud Platforms</p>
-            <ul class="resume">
-              <li>Azure</li>
-              <li>AWS</li>
-              <li>Google Cloud Platform</li>
-              <li>vSphere (for virtualization)</li>
-            </ul>
-            <p class="subtitle">Operating Systems</p>
-            <ul class="resume">
-              <li>Linux</li>
-              <li>Windows</li>
-              <li>iOS</li>
-            </ul>
-            <p class="subtitle">CI-CD</p>
-            <ul class="resume">
-              <li>Jenkins</li>
-              <li>GitHub Actions</li>
-            </ul>
-          </div>
-          <div class="col-sm-3">
-            <p class="subtitle">Testing</p>
-            <ul class="resume">
-              <li>SonarQube</li>
-            </ul>
-            <p class="subtitle">MDM</p>
-            <ul class="resume">
-              <li>Intune</li>
-              <li>Kandji</li>
-              <li>JamfNow</li>
-            </ul>
-            <p class="subtitle">Monitoring</p>
-            <ul class="resume">
-              <li>Nagios</li>
-              <li>Zabbix</li>
-              <li>CheckMK</li>
-              <li>Webmin</li>
-              <li>SNOW</li>
-              <li>Lansweeper</li>
-            </ul>
-          </div>
-          <div class="col-sm-3">
-            <p class="subtitle">Deployment</p>
-            <ul class="resume">
-              <li>EC2</li>
-              <li>Kubernetes</li>
-              <li>ECS</li>
-              <li>Elastic Beanstalk</li>
-              <li>S3</li>
-            </ul>
-            <p class="subtitle">Ticketing</p>
-            <ul class="resume">
-              <li>ServiceNow</li>
-              <li>Jira</li>
-              <li>Happy Fox</li>
-              <li>Zendesk</li>
-              <li>Fresh Desk</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <br /> 
-      <!-- End Technical Skills -->
-
-      <!-- Professional Interests -->
-      <div class="row">
-        <div class="col-sm-12">
-          <h3 class="title">Professional Interests</h3>
-          <hr> 
-          <ul class="resume">
-            <li>Expertise in Technology Training, Mentorship, and Team Leadership</li>
-            <li>Continuous Learner and Growth Enthusiast</li>
-            <li>Cloud Security and Software Integrity, and Data Protection</li>
-            <li>Advocate for Streamlined Automation, CI/CD, and DevOps Excellence</li>
-          </ul>
-        </div>
-      </div>
-      <br />
-      <hr>
-      <!-- End Professional Interests -->
-
-      <!-- Footer -->
-      <footer class="main-footer">
-        <div class="row">
-          <div class="col-sm-4">
-            <a href="#top">Back to Top<i class="fa fa-arrow-circle-up fa-fw"></i></a>
-          </div>
-          <div class="col-sm-4">
-            <p>2024 &copy; Donatus Dee.</p>
-          </div>
-          <div class="col-sm-4">
-            <p class="pull-right"><a href="#contact" data-toggle="modal"><i class="fa fa-envelope fa-2x fa-fw"></i></a></p>
-            <p class="pull-right"><a href="https://www.linkedin.com/in/donatus-dziedzorm-d-64842941/"><i class="fa fa-linkedin-square fa-2x fa-fw"></i></a></p>
-            <p class="pull-right"><a href="https://github.com/getdzidon"><i class="fa fa-github fa-2x fa-fw"></i></a></p>
-          </div>
-        </div>
-      </footer>
-      <!-- End Footer -->
     </div>
 
-    <!-- Contact Modal -->
-    <div class="modal fade" id="contact" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <form class="form-horizontal">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title">Contact Me</h4>
-            </div>
-            <div class="modal-body">
+    <div class="section">
+      <h2>Professional Summary</h2>
+      <p>Tech-savvy Systems Administrator with 5+ years' experience managing cloud systems, automating infrastructure, and maintaining system uptime. Skilled in Linux, AWS, DevOps practices, and scripting. Passionate about security, scalability, and operational efficiency.</p>
+    </div>
 
-              <div class="form-group">
-                <label for="contact-name" class="col-md-2 control-label">Name:</label>
-                <div class="col-md-10">
-                  <input type="text" class="form-control" id="contact-name" placeholder="Full Name"></input>
-                </div>
-              </div>
+    <div class="two-column">
+      <div class="column section">
+        <h2>Key Achievements</h2>
+        <ul>
+          <li>Maintained 99.9% uptime with Linux server monitoring</li>
+          <li>Reduced manual tasks by 40% using shell scripts</li>
+          <li>Saved 20% cloud cost via AWS/Azure optimization</li>
+          <li>CI/CD implementation reduced deploy time by 50%</li>
+        </ul>
+      </div>
 
-              <div class="form-group">
-                <label for="contact-email" class="col-md-2 control-label">Email:</label>
-                <div class="col-md-10">
-                  <input type="email" class="form-control" id="contact-email" placeholder="you@example.com"></input>
-                </div>
-              </div>
+      <div class="column section">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li><strong>Languages:</strong> Python, Bash, YAML, Git, HTML</li>
+          <li><strong>Cloud:</strong> AWS, Azure, GCP</li>
+          <li><strong>Containers:</strong> Docker, Kubernetes</li>
+          <li><strong>CI/CD:</strong> Jenkins, GitHub Actions</li>
+          <li><strong>Monitoring:</strong> Nagios, Zabbix, Grafana</li>
+        </ul>
+      </div>
+    </div>
 
-              <div class="form-group">
-                <label for="contact-message" class="col-md-2 control-label">Message:</label>
-                <div class="col-md-10">
-                  <textarea class="form-control" rows="6">This contact form is under construction... It is not lined to any backend database or working at the moment.</textarea>
-                </div>
-              </div>
+    <div class="section">
+      <h2>Professional Interests</h2>
+      <ul>
+        <li>Infrastructure automation and CI/CD pipelines</li>
+        <li>Cloud architecture and DevOps culture</li>
+        <li>Mentoring, IT strategy, and continuous learning</li>
+      </ul>
+    </div>
 
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Send Message</button>
-            </div>
-          </form>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-    <!-- End Contact Modal -->
-
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-  </body>
-</html>
-<!-- partial -->
-  <script  src="./js/script.js"></script>
+    <div class="footer">
+      &copy; 2025 Alexander Amoah-Sakyi
+    </div>
+  </div>
 
 </body>
 </html>
